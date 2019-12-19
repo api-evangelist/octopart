@@ -1,0 +1,75 @@
+{
+    "name": "Octopart",
+    "description": "Octopart is a search engine for electronic and industrial parts. Find part data, check availability, and compare prices across hundreds of distributors and thousands of manufacturers.",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/447-octopart.jpg",
+    "tags": [
+        "api provider",
+        "electronics",
+        "have api",
+        "shopping",
+        "target"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/octopart\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Octopart",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/447-octopart.jpg",
+            "humanURL": "http:\/\/octopart.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/octopart-openapi.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Base",
+            "url": "http:\/\/octopart.com\/api\/"
+        },
+        {
+            "type": "Blog",
+            "url": "http:\/\/octopart.com\/blog"
+        },
+        {
+            "type": "Blog RSS",
+            "url": "http:\/\/feeds2.feedburner.com\/octopart"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/octopart"
+        },
+        {
+            "type": "Developers",
+            "url": "http:\/\/octopart.com\/api\/overview"
+        },
+        {
+            "type": "Developers",
+            "url": "http:\/\/octopart.com\/api"
+        },
+        {
+            "type": "Email",
+            "url": "api@octopart.com"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/octopart"
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/octopart"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/octopart.com"
+        }
+    ]
+}
