@@ -1,0 +1,32 @@
+aid: octopart
+name: Octopart
+description: "Electronic part data for manufacturing, design, and sourcing"
+url: https://octopart.com/api/v4/reference
+specificationVersion: '0.20'
+created: '2026-05-28'
+modified: '2026-05-28'
+x-source: public-apis/public-apis
+x-category: "Shopping"
+x-tier: 3
+x-tier-reason: bulk-registered-from-public-apis
+tags:
+  - Shopping
+  - Public APIs
+apis:
+  - name: Octopart
+    description: "Electronic part data for manufacturing, design, and sourcing"
+    humanURL: https://octopart.com/api/v4/reference
+    baseURL: https://octopart.com/api/v4/reference
+    tags:
+      - Shopping
+    properties:
+      - type: Documentation
+        url: https://octopart.com/api/v4/reference
+common:
+  - type: Website
+    url: https://octopart.com/api/v4/reference
+  - type: PublicAPIsListing
+    url: https://github.com/public-apis/public-apis
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
