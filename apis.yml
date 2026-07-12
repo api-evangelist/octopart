@@ -23,6 +23,8 @@ apis:
       - type: Documentation
         url: https://octopart.com/api/v4/reference
 common:
+  - type: DomainSecurity
+    url: security/octopart-domain-security.yml
   - type: Website
     url: https://octopart.com/api/v4/reference
   - type: PublicAPIsListing
