@@ -1,4 +1,16 @@
 aid: octopart
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/octopart.png
 name: Octopart
 description: "Electronic part data for manufacturing, design, and sourcing"
 url: https://octopart.com/api/v4/reference
