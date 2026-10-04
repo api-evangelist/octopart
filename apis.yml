@@ -39,7 +39,6 @@ apis:
   - name: Octopart
     description: "Electronic part data for manufacturing, design, and sourcing"
     humanURL: https://octopart.com/api/v4/reference
-    baseURL: https://octopart.com/api/v4/reference
     tags:
       - Shopping
     properties:
