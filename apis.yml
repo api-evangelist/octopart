@@ -1,4 +1,5 @@
 aid: octopart
+
 deliveryModel:
   model: unknown
   open_source: false
@@ -10,6 +11,7 @@ deliveryModel:
   - none
   generated: '2026-08-28'
   method: derived
+
 accessModel:
   pricing: unknown
   onboarding: unknown
@@ -21,36 +23,86 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
+
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/octopart.png
+
 name: Octopart
-description: "Electronic part data for manufacturing, design, and sourcing"
+
+description: Electronic part data for manufacturing, design, and sourcing
+
 url: https://octopart.com/api/v4/reference
+
 specificationVersion: '0.23'
+
 created: '2026-05-28'
-modified: '2026-05-28'
+
+modified: '2026-10-19'
+
 x-source: public-apis/public-apis
-x-category: "Shopping"
-x-tier: 3
+
+x-category: Shopping
+
+x-tier: "3"
+
 x-tier-reason: bulk-registered-from-public-apis
+
 tags:
-  - Shopping
-  - Public APIs
-apis:
-  - name: Octopart
-    description: "Electronic part data for manufacturing, design, and sourcing"
-    humanURL: https://octopart.com/api/v4/reference
-    tags:
-      - Shopping
-    properties:
-      - type: Documentation
-        url: https://octopart.com/api/v4/reference
-common:
-  - type: DomainSecurity
-    url: security/octopart-domain-security.yml
-  - type: Website
-    url: https://octopart.com/api/v4/reference
-  - type: PublicAPIsListing
-    url: https://github.com/public-apis/public-apis
+- Shopping
+- Public APIs
+
 maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+- FN: Kin Lane
+  email: kin@apievangelist.com
+
+common:
+- type: Hosts
+  url: hosts/octopart-hosts.yml
+- type: Vendors
+  url: vendors/octopart-vendors.yml
+- type: SDKs
+  url: packages/octopart-packages.yml
+- type: Packages
+  url: packages/octopart-packages.yml
+- type: GitHubOrganization
+  url: https://github.com/octopart
+- type: DomainSecurity
+  url: security/octopart-domain-security.yml
+- type: Website
+  url: https://octopart.com/api/v4/reference
+- type: PublicAPIsListing
+  url: https://github.com/public-apis/public-apis
+
+apis:
+- name: Octopart
+  description: 'Octopart API v4 GraphQL endpoint for electronic part data (search,
+    pricing, availability, specs). Anonymous introspection at https://octopart.com/api/v4/endpoint
+    returns {"errors":[{"message":"no token provided"}]}: the schema is token-gated.'
+  humanURL: https://octopart.com/api/v4/reference
+  tags:
+  - Shopping
+  properties:
+  - type: Documentation
+    url: https://octopart.com/api/v4/reference
+  aid: octopart:octopart
+  baseURL: https://octopart.com/api/v4/endpoint
+
+x-coverage:
+  state: blocked
+  reason: bot-challenge
+  detail: octopart.com answers a browser User-Agent with HTTP 403 on the homepage
+    and the /api/v4/reference docs, while the GraphQL endpoint /api/v4/endpoint is
+    live but rejects introspection with "no token provided".
+  evidence:
+  - url: https://octopart.com/api/v4/reference
+    status: 403
+  - url: https://octopart.com/
+    status: 403
+  - url: https://octopart.com/api/v4/endpoint
+    status: 200
+  checked: '2026-10-19'
+
+x-enrichment:
+  date: '2026-10-19'
+  status: minimal
+  artifacts_added: 0
+  pass: local-v5

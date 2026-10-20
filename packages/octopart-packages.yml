@@ -1,0 +1,31 @@
+generated: '2026-10-19'
+method: probed
+generator: harvest-packages.py
+source: registry metadata endpoints (registry.npmjs.org, pypi.org, rubygems.org, api.nuget.org, packagist.org, crates.io) ; github.com/octopart
+ownership_rule: 'official: true only when the registry metadata (homepage, repository, author, URLs) names the provider''s domain (octopart.com,
+  security/octopart-domain-security.yml) or its accepted GitHub org (octopart).'
+packages:
+- name: octopart
+  registry: npm
+  url: https://www.npmjs.com/package/octopart
+  language: JavaScript
+  official: true
+  version: 0.1.1
+  published: '2014-02-03'
+  evidence: metadata names octopart.com
+- name: octopart
+  registry: pypi
+  url: https://pypi.org/project/octopart/
+  language: Python
+  official: false
+  version: 0.0.24
+  published: '2018-05-08'
+  evidence: 'name match only: the metadata names neither the provider''s domain nor its GitHub org'
+- name: octopart
+  registry: rubygems
+  url: https://rubygems.org/gems/octopart
+  language: Ruby
+  official: false
+  version: 0.2.0
+  published: '2012-04-28'
+  evidence: 'name match only: the metadata names neither the provider''s domain nor its GitHub org'
